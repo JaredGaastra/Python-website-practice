@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}FORM V2{% endblock %}
+
+{% block content %} 
+    <h1>Your lucky number is: {{lucky_num}}</h1>
+    <p>{{msg}}</p>
+    {% if lucky_num == 3%}
+    <h2>thats my lucky num too!</h2>
+    {% else %}
+    <h2>I DONT LIKE THAT num</h2>
+    {% endif %}
+{% endblock %}
